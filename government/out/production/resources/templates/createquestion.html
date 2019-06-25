@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<!-- Meta, title, CSS, favicons, etc. -->
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>Gentelella Alela! | </title>
+	<link rel="stylesheet" type="text/css" href="../build/css/base.css" />
+	<link rel="stylesheet" type="text/css" href="../build/css/edit.css" />
+	<link rel="stylesheet" type="text/css" href="../build/css/font-awesome/css/font-awesome.min.css" />
+
+	<!-- Bootstrap -->
+	<link href="../vendors/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+	<!-- Font Awesome -->
+	<link href="../vendors/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+	<!-- NProgress -->
+	<link href="../vendors/nprogress/nprogress.css" rel="stylesheet">
+
+	<!-- Custom Theme Style -->
+	<link href="../build/css/custom.min.css" rel="stylesheet">
+</head>
+
+<body class="nav-md">
+<div class="container body">
+	<div class="main_container">
+		<div class="col-md-3 left_col">
+			<div class="left_col scroll-view"style="background:#CE0000">
+				<div class="profile clearfix">
+					<div class="profile_pic">
+						<img src="/images/timg.jpg" alt="..." class="img-circle profile_img" style="margin-left:80px ">
+					</div>
+					<div class="navbar nav_title" style="border: 0;background: #CE0000">
+						<h2 style="color: #FFFFFF;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;南昌市人民政府</h2>
+					</div>
+
+					<div class="clearfix"></div>
+					<!-- menu profile quick info -->
+				</div>
+				<!-- /menu profile quick info -->
+				<br/>
+				<!-- sidebar menu -->
+				<div id="sidebar-menu" class="main_menu_side hidden-print main_menu">
+					<div class="menu_section">
+						<ul class="nav side-menu" >
+
+							<li><a><i class="fa fa-desktop"></i> 政策法规管理 <span class="fa fa-chevron-down"></span></a>
+								<ul class="nav child_menu">
+									<li><a href="general_elements.html">普法宣传页面管理</a></li>
+								</ul>
+							</li>
+							<li><a><i class="fa fa-table"></i> 日程公开管理 <span class="fa fa-chevron-down"></span></a>
+								<ul class="nav child_menu">
+									<li><a href="calendar.html">官员日程管理</a></li>
+									<li><a href="contacts.html">官员信息管理</a></li>
+								</ul>
+							</li>
+							<li><a><i class="fa fa-bar-chart-o"></i>网站视频管理<span class="fa fa-chevron-down"></span></a>
+								<ul class="nav child_menu">
+									<li><a href="chartjs.html">精彩视频管理</a></li>
+								</ul>
+							</li>
+							<li><a><i class="fa fa-clone"></i>调查与反馈管理<span class="fa fa-chevron-down"></span></a>
+								<ul class="nav child_menu">
+									<li><a href="wenjuan.html">问卷调查管理</a></li>
+									<li><a href="fixed_footer.html">民生反馈管理</a></li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+
+				</div>
+				<!-- /sidebar menu -->
+
+				<!-- /menu footer buttons -->
+				<div class="sidebar-footer hidden-small"style="background: #CE0000">
+
+					<a data-toggle="tooltip" data-placement="top" title="Logout" href="login.html"style="background: #CE0000;margin-left: 80px">
+						<span class="glyphicon glyphicon-off" aria-hidden="true"></span>
+					</a>
+				</div>
+				<!-- /menu footer buttons -->
+			</div>
+		</div>
+
+		<!-- top navigation -->
+		<div class="top_nav">
+			<div class="nav_menu">
+				<nav>
+					<div class="nav toggle">
+						<a id="menu_toggle"><i class="fa fa-bars"></i></a>
+					</div>
+
+
+				</nav>
+			</div>
+		</div>
+		<!-- /top navigation -->
+
+		<!-- page content -->
+		<div class="right_col" role="main">
+			<div class="">
+				<div class="page-title">
+					<div class="title_left">
+						<h3>南昌政府问卷</h3>
+					</div>
+
+
+				</div>
+
+				<div class="clearfix"></div>
+
+				<div class="row">
+					<div class="col-md-12 col-sm-12 col-xs-12">
+						<div class="x_panel">
+							<div class="x_title">
+								<h2>欢迎创建问卷</h2>
+								<ul class="nav navbar-right panel_toolbox">
+									<li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
+									</li>
+									<li class="dropdown">
+										<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i class="fa fa-wrench"></i></a>
+										<ul class="dropdown-menu" role="menu">
+											<li><a href="#">Settings 1</a>
+											</li>
+											<li><a href="#">Settings 2</a>
+											</li>
+										</ul>
+									</li>
+									<li><a class="close-link"><i class="fa fa-close"></i></a>
+									</li>
+								</ul>
+								<div class="clearfix"></div>
+							</div>
+							<div class="edit-wrap">
+								<div class="navigation clearfix">
+									<a class="common-button" id="preview-survey" href="javascript:void(0);">预览问卷</a>
+								</div>
+								<div class="edit-survey-content clearfix">
+									<div class="sur-sidebar">
+										<div class="select-title">题型选择 <i class="fa fa-angle-up"></i></div>
+										<ul class="navul-left">
+											<li class="radio-btn" _type = "1">单选</li>
+											<li class="choice-btn"  _type = "2">多选</li>
+											<li class="ques-ans-btn"  _type = "3">多行填空题</li>
+											<li class="describe-btn"  _type = "4">描述说明</li>
+										</ul>
+									</div>
+									<div class="sur-container" id="sur-container">
+										<div class="survey-title edit-area" contenteditable="true">南昌政府问卷调查</div>
+										<div class="question-box">
+											<p class="blank-tip">点击左侧题目，添加到此空白区域</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div>
+								<center><input type="button"class="btn btn-default submit" value="前往发布" onClick="window.open('https://www.wjx.cn/','blank_')">
+									></center>
+
+							</div>
+							<script type="text/javascript" src = "../build/js/jquery.min.js"></script>
+							<script type="text/javascript" src = "../build/js/survey.js"></script>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- /page content -->
+
+		<!-- footer content -->
+		<footer>
+			<div class="pull-right">
+				&nbsp;
+			</div>
+			<div class="clearfix"></div>
+		</footer>
+		<!-- /footer content -->
+	</div>
+</div>
+
+<!-- jQuery -->
+<script src="../vendors/jquery/dist/jquery.min.js"></script>
+<!-- Bootstrap -->
+<script src="../vendors/bootstrap/dist/js/bootstrap.min.js"></script>
+<!-- FastClick -->
+<script src="../vendors/fastclick/lib/fastclick.js"></script>
+<!-- NProgress -->
+<script src="../vendors/nprogress/nprogress.js"></script>
+
+<!-- Custom Theme Scripts -->
+<script src="../build/js/custom.min.js"></script>
+</body>
+</html>

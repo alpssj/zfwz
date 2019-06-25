@@ -1,0 +1,249 @@
+.edit-wrap {
+	width: 800px;
+	background-color: #fff;
+	margin: 0 auto;
+}
+
+.edit-area {
+	border: none;
+	background-color: #fff;
+	outline: none;
+}
+.edit-area:hover {
+	background-color: #fdf9cd;
+}
+.edit-area:focus {
+	border: 1px solid #333;
+	background-color: #fdf9cd;
+}
+.common-button {
+	width: 72px;
+	height: 28px;
+	line-height: 28px;
+	text-align: center;
+	color: #2c4a93;
+	border: 1px solid #b0c0e7;
+	background-color: #f1f5fd;
+	border-radius: 3px;
+}
+.common-button:hover {
+	border: 1px solid #6583cc;
+}
+.required {
+	color: red;
+}
+
+
+.navigation {
+	width: 100%;
+	height: 60px;
+	overflow: hidden;
+}
+.navigation a {
+	float: right;
+	margin-top: 15px;
+}
+
+.edit-survey-content {
+	position: relative;
+	overflow: hidden;
+}
+.sur-sidebar {
+	height: auto;
+	float: left;
+	width: 168px;
+	z-index: 100;
+	border: 1px solid #bdbdbd;
+}
+.select-title {
+    height: 48px;
+    font-size: 16px;
+    line-height: 48px;
+    padding: 0 0 0 10px;
+    margin-right: 10px;
+    overflow: hidden;
+    border-bottom: 1px solid #dbdbdb;
+}
+.select-title i {
+	margin-left: 60px;
+}
+.navul-left {
+	width: 100%;
+}
+.navul-left li {
+	cursor: pointer;
+    height: 36px;
+    text-align: left;
+    line-height: 36px;
+    background: url(../images/question_logo.png) no-repeat;
+    padding-left: 50px;
+}
+.navul-left .radio-btn {
+	background-position: 0 -4px;
+}
+.navul-left .choice-btn {
+	background-position: 0 -76px;
+}
+.navul-left .describe-btn {
+	background-position: 0 -220px;
+}
+.navul-left .ques-ans-btn {
+	background-position: 0 -148px;
+}
+
+
+.sur-container {
+	position: relative;
+	margin-left: 175px;
+	padding-bottom: 20px;
+	min-width: 400px;
+	max-width: 800px;
+}
+.survey-title {
+	position: relative;
+	height: 48px;
+	line-height: 48px;
+	border: 1px solid #dbdbdb;
+	text-align: center;
+}
+.survey-desc {
+	position: relative;
+	margin: 4px 0;
+	border: 1px solid #dbdbdb;
+	padding: 20px;
+}
+.question-box {
+	min-height: 200px;
+}
+.blank-tip {
+	margin-top: 50px;
+	font-size: 20px;
+	color: #ccc;
+	text-align: center;
+	display: none;
+}
+
+.topic-type-question {
+	border: 1px solid #dbdbdb;
+    margin: 4px 0;
+}
+.question-title {
+	padding: 5px 20px 5px 20px;
+	margin: 13px 0;
+    font-size: 14px;
+}
+.qu-title-content {
+	display: inline-block;
+	width: 90%;
+    min-height: 30px;
+    line-height: 30px;
+    position: relative;
+    vertical-align: middle;
+    margin: 0 auto;
+    word-break: break-all;
+}
+.question-choice {
+	padding: 0 0 10px 35px;
+    vertical-align: middle;
+}
+.question-choice .choice {
+	margin-bottom: 5px;
+	position: relative;
+}
+.question-choice input {
+	vertical-align: middle;
+}
+.choice-text {
+	display: inline-block;
+	width: 85%;
+    min-height: 30px;
+    line-height: 30px;
+    position: relative;
+    vertical-align: middle;
+}
+.add-area {
+	float: left;
+    margin: 0 35px;
+    height: 30px;
+    font-size: 20px;
+    cursor: pointer;
+    color: #999;
+    visibility: hidden;
+
+}
+.operate {
+	float: right;
+    margin:0 30px 10px 0;
+    height: 36px;
+    cursor: pointer;
+    visibility: hidden;
+}
+.operate li {
+	float: left;
+    margin: 0 12px;
+    width: 23px;
+    height: 23px;
+    text-align: center;
+    font-size: 20px;
+    color: #999;
+}
+.operate li:hover {
+	color: #33cec8;
+}
+.topic-type-question:hover .operate, .topic-type-question:hover .add-area {
+	visibility: visible;
+}
+.multi-input {
+	width: 350px;
+    height: 90px;
+    border: 1px solid #b0c0e7;
+    resize: none;
+    padding: 5px;
+}
+.edit-img {
+	position: absolute;
+    overflow: hidden;
+    top: -25px;
+    right: 0px;
+    z-index: 100;
+    background: #fff;
+    border: 1px solid #dbdbdb;
+    height: 22px;
+    line-height: 22px;
+    display: none;
+}
+.edit-img li {
+	float: left;
+    width: 20px;
+    height: 20px;
+    margin: 0 5px;
+    cursor: pointer;
+    font-size: 16px;
+    color: #999;
+}
+.edit-img li:hover {
+	color: #6F73FF;
+}
+.choice-text:focus .edit-img{
+	display: block;
+}
+
+.submit-survey {
+	font-size: 14px;
+    background: #e93630;
+    color: #fff;
+    width: 215px;
+    height: 30px;
+    line-height: 30px;
+    cursor: pointer;
+    margin: 0 auto;
+    width: 150px;
+	background-color: #6573cc;
+	text-align: center;
+
+}
+
+.survey-wrap {
+	margin: 20px;
+	padding: 20px;
+}

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>问卷预览</title>
+
+	<link rel="stylesheet" type="text/css" href="../build/css/base.css" />
+	<link rel="stylesheet" type="text/css" href="../build/css/edit.css" />
+	<link rel="stylesheet" type="text/css" href="../build/css/font-awesome/css/font-awesome.min.css" />
+	
+</head>
+<body>
+	<div id="survey-wrap" class="survey-wrap"></div>
+
+	<script type="text/javascript" src = "../build/js/jquery.min.js"></script>
+	<script type="text/javascript">
+		$(function() {
+			var surveyHtml = localStorage.getItem('surveyHtml');
+			$("#survey-wrap").html(surveyHtml);
+			$(".sur-container").css("margin", "10px auto");
+			$(".edit-area").attr("contenteditable", false).removeClass("edit-area");
+			$(".add-area, .operate").hide();
+			$('.describe').css({"background-color": "#f1f5fd", "border-color": "#f1f5fd"});
+			$(".survey-title").css({"font-size": '28px', "color": '#333', "margin": '20px 0', "border": "none"})
+			$(".ques-block").css({"background-color": "#eee"});
+			$(".topic-type-question").css({"border": "none"});
+			$("#survey-wrap").append("<div class = 'submit-survey'>提交</div>")
+		})
+	</script>
+</body>
+</html>
