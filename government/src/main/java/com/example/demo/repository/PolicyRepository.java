@@ -1,6 +1,5 @@
 package com.example.demo.repository;
 
-import com.example.demo.domain.Information;
 import com.example.demo.domain.Policy;
 import org.apache.ibatis.annotations.*;
 import org.apache.ibatis.type.JdbcType;
@@ -24,5 +23,12 @@ public interface PolicyRepository {
     @Select("select * from policy where department like concat('%',#{department},'%')")
     @ResultMap(value="PolicyMap")
     public List<Policy> findByName(@Param("department") String department);
+
+    @Delete("delete from policy where policy_name=#{GenName}")
+    @ResultMap(value="PolicyMap")
+    public int deletePolicy(@Param("GenName") String GenName);
+
+    @Insert("INSERT INTO policy ( policy_name, policy_link,department) VALUES (#{fileName}, #{fileLink}, #{fileDepartment})")
+    public int savePolicy(@Param("fileName") String fileName,@Param("fileLink") String fileLink,@Param("fileDepartment") String fileDepartment);
 
 }

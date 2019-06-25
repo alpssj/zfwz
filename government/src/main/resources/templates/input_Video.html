@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <!-- Meta, title, CSS, favicons, etc. -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>政策视频录入</title>
+
+    <!-- Bootstrap -->
+
+    <link href="../vendors/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link href="../vendors/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <!-- NProgress -->
+    <link href="../vendors/nprogress/nprogress.css" rel="stylesheet">
+    <!-- Animate.css -->
+    <link href="../vendors/animate.css/animate.min.css" rel="stylesheet">
+
+    <!-- Custom Theme Style -->
+    <link href="../build/css/custom.min.css" rel="stylesheet">
+</head>
+
+<body class="login">
+<div>
+    <div class="login_wrapper">
+        <div class="animate form login_form">
+            <section class="login_content">
+                <form action="/vio/saveVio" >
+                    <h1>视频录入界面</h1>
+                    <div>
+                        <input type="text" class="form-control" placeholder="视频名称" name="videoName" />
+                    </div>
+                    <div>
+                        <input type="text" class="form-control" placeholder="链接"name="videoLink"/>
+                    </div>
+                    <div>
+                        <input type="text" class="form-control" placeholder="类型"name="videoKind"/>
+                    </div>
+
+                    <div>
+                        <input class="btn btn-default submit" type = "submit" value="录入">
+                        <input id="back" type="button" class="btn btn-default submit" value="返回" onclick="javascript:history.go(-1);">
+                    </div>
+
+                    <div class="clearfix"></div>
+
+                    <div class="separator">
+                        <div class="clearfix"></div>
+                        <br />
+                    </div>
+
+                </form>
+            </section>
+        </div>
+    </div>
+</div>
+<script src="../vendors/jquery/dist/jquery.min.js"></script>
+<script>
+    $(function () {
+        console.log($("#inVO").val())
+        if([[${inVO}]]>0){
+            alert("录入成功!!!!");
+        }
+    })
+    $("#back").click(function () {
+        window.location.href="/log/change_video";
+    })
+</script>
+</body>
+</html>
+
+

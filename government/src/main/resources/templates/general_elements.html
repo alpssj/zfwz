@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <!-- Meta, title, CSS, favicons, etc. -->
@@ -35,7 +35,7 @@
             <div class="left_col scroll-view"style="background:#CE0000">
                 <div class="profile clearfix">
                     <div class="profile_pic">
-                        <img src="images/timg.jpg" alt="..." class="img-circle profile_img" style="margin-left:80px ">
+                        <img src="/images/timg.png" alt="..." class="img-circle profile_img" style="margin-left:80px ">
                     </div>
                     <div class="navbar nav_title" style="border: 0;background: #CE0000">
                         <h2 style="color: #FFFFFF;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;南昌市人民政府</h2>
@@ -53,7 +53,7 @@
                             <li style="background: #CE0000"><a><i class="fa fa-home"></i> 网站主页 <span class="fa fa-chevron-down"></span></a>
                                 <ul class="nav child_menu">
                                     <li><a href="/log/index">走进南昌</a></li>
-                                    <li><a href="/log/index2">南昌新闻</a></li>
+                                    <li><a href="/log/news">南昌新闻</a></li>
                                 </ul>
                             </li>
                             <li><a><i class="fa fa-edit"></i> 招商引资 <span class="fa fa-chevron-down"></span></a>
@@ -123,24 +123,19 @@
             <div class="">
                 <div class="page-title">
                     <div class="title_left">
-                        <h3>政府政策文件一览</h3>
+                        <h3>政策文件一览</h3>
                     </div>
-
-
                 </div>
-
                 <div class="clearfix"></div>
-
                 <div class="row">
                     <div class="col-md-12 col-sm-12 col-xs-12">
                         <div class="x_panel">
                             <div class="x_title">
-                                <h2>市政府文件</small></h2>
+                                <h2>市政府文件</h2>
 
                                 <div class="clearfix"></div>
                             </div>
                             <div class="x_content">
-
                                 <table id="datatable-buttons" class="table table-striped table-bordered">
                                     <thead>
                                     <tr>
@@ -148,525 +143,39 @@
                                         <th>链接</th>
                                         <th>部门</th>
                                         <th>编号</th>
-                                        <th>日期</th>
-                                        <th>有效性</th>
                                     </tr>
                                     </thead>
-
-
                                     <tbody>
-                                    <tr>
-                                        <td>南昌市人民政府关于印发南昌市政府投资项目申报操作细则（试行）的通知 </td>
-                                        <td><a href="http://www.nc.gov.cn/xxgkpt/qtygwj/201810/daa504e865c54902a6a4551730ad7d6b.shtml" target="_blank">http://www.nc.gov.cn/xxgkpt/qtygwj/201810/daa504e865c54902a6a4551730ad7d6b.shtml</a></td>
-                                        <td> 市政府办公厅  </td>
-                                        <td> 洪府发〔2018〕21号  </td>
-                                        <td>2018-10-17 </td>
-                                        <td>有效</td>
-                                    </tr>
-                                    <tr>
-                                        <td>南昌市人民政府关于印发南昌市政府投资项目申报操作细则（试行）的通知 </td>
-                                        <td><a href="http://www.nc.gov.cn/xxgkpt/qtygwj/201810/daa504e865c54902a6a4551730ad7d6b.shtml" target="_blank">http://www.nc.gov.cn/xxgkpt/qtygwj/201810/daa504e865c54902a6a4551730ad7d6b.shtml</a></td>
-                                        <td> 市政府办公厅  </td>
-                                        <td> 洪府发〔2018〕21号  </td>
-                                        <td>2018-10-17 </td>
-                                        <td>有效</td>
-                                    </tr>   <tr>
-                                        <td>南昌市人民政府关于印发南昌市政府投资项目申报操作细则（试行）的通知 </td>
-                                        <td><a href="http://www.nc.gov.cn/xxgkpt/qtygwj/201810/daa504e865c54902a6a4551730ad7d6b.shtml" target="_blank">http://www.nc.gov.cn/xxgkpt/qtygwj/201810/daa504e865c54902a6a4551730ad7d6b.shtml</a></td>
-                                        <td> 市政府办公厅  </td>
-                                        <td> 洪府发〔2018〕21号  </td>
-                                        <td>2018-10-17 </td>
-                                        <td>有效</td>
-                                    </tr>   <tr>
-                                        <td>南昌市人民政府关于印发南昌市政府投资项目申报操作细则（试行）的通知 </td>
-                                        <td><a href="http://www.nc.gov.cn/xxgkpt/qtygwj/201810/daa504e865c54902a6a4551730ad7d6b.shtml" target="_blank">http://www.nc.gov.cn/xxgkpt/qtygwj/201810/daa504e865c54902a6a4551730ad7d6b.shtml</a></td>
-                                        <td> 市政府办公厅  </td>
-                                        <td> 洪府发〔2018〕21号  </td>
-                                        <td>2018-10-17 </td>
-                                        <td>有效</td>
-                                    </tr>   <tr>
-                                        <td>南昌市人民政府关于印发南昌市政府投资项目申报操作细则（试行）的通知 </td>
-                                        <td><a href="http://www.nc.gov.cn/xxgkpt/qtygwj/201810/daa504e865c54902a6a4551730ad7d6b.shtml" target="_blank">http://www.nc.gov.cn/xxgkpt/qtygwj/201810/daa504e865c54902a6a4551730ad7d6b.shtml</a></td>
-                                        <td> 市政府办公厅  </td>
-                                        <td> 洪府发〔2018〕21号  </td>
-                                        <td>2018-10-17 </td>
-                                        <td>有效</td>
-                                    </tr>   <tr>
-                                        <td>南昌市人民政府关于印发南昌市政府投资项目申报操作细则（试行）的通知 </td>
-                                        <td><a href="http://www.nc.gov.cn/xxgkpt/qtygwj/201810/daa504e865c54902a6a4551730ad7d6b.shtml" target="_blank">http://www.nc.gov.cn/xxgkpt/qtygwj/201810/daa504e865c54902a6a4551730ad7d6b.shtml</a></td>
-                                        <td> 市政府办公厅  </td>
-                                        <td> 洪府发〔2018〕21号  </td>
-                                        <td>2018-10-17 </td>
-                                        <td>有效</td>
-                                    </tr>   <tr>
-                                        <td>南昌市人民政府关于印发南昌市政府投资项目申报操作细则（试行）的通知 </td>
-                                        <td><a href="http://www.nc.gov.cn/xxgkpt/qtygwj/201810/daa504e865c54902a6a4551730ad7d6b.shtml" target="_blank">http://www.nc.gov.cn/xxgkpt/qtygwj/201810/daa504e865c54902a6a4551730ad7d6b.shtml</a></td>
-                                        <td> 市政府办公厅  </td>
-                                        <td> 洪府发〔2018〕21号  </td>
-                                        <td>2018-10-17 </td>
-                                        <td>有效</td>
-                                    </tr>   <tr>
-                                        <td>南昌市人民政府关于印发南昌市政府投资项目申报操作细则（试行）的通知 </td>
-                                        <td><a href="http://www.nc.gov.cn/xxgkpt/qtygwj/201810/daa504e865c54902a6a4551730ad7d6b.shtml" target="_blank">http://www.nc.gov.cn/xxgkpt/qtygwj/201810/daa504e865c54902a6a4551730ad7d6b.shtml</a></td>
-                                        <td> 市政府办公厅  </td>
-                                        <td> 洪府发〔2018〕21号  </td>
-                                        <td>2018-10-17 </td>
-                                        <td>有效</td>
-                                    </tr>   <tr>
-                                        <td>南昌市人民政府关于印发南昌市政府投资项目申报操作细则（试行）的通知 </td>
-                                        <td><a href="http://www.nc.gov.cn/xxgkpt/qtygwj/201810/daa504e865c54902a6a4551730ad7d6b.shtml" target="_blank">http://www.nc.gov.cn/xxgkpt/qtygwj/201810/daa504e865c54902a6a4551730ad7d6b.shtml</a></td>
-                                        <td> 市政府办公厅  </td>
-                                        <td> 洪府发〔2018〕21号  </td>
-                                        <td>2018-10-17 </td>
-                                        <td>有效</td>
-                                    </tr>   <tr>
-                                        <td>南昌市人民政府关于印发南昌市政府投资项目申报操作细则（试行）的通知 </td>
-                                        <td><a href="http://www.nc.gov.cn/xxgkpt/qtygwj/201810/daa504e865c54902a6a4551730ad7d6b.shtml" target="_blank">http://www.nc.gov.cn/xxgkpt/qtygwj/201810/daa504e865c54902a6a4551730ad7d6b.shtml</a></td>
-                                        <td> 市政府办公厅  </td>
-                                        <td> 洪府发〔2018〕21号  </td>
-                                        <td>2018-10-17 </td>
-                                        <td>有效</td>
-                                    </tr>   <tr>
-                                        <td>南昌市人民政府关于印发南昌市政府投资项目申报操作细则（试行）的通知 </td>
-                                        <td><a href="http://www.nc.gov.cn/xxgkpt/qtygwj/201810/daa504e865c54902a6a4551730ad7d6b.shtml" target="_blank">http://www.nc.gov.cn/xxgkpt/qtygwj/201810/daa504e865c54902a6a4551730ad7d6b.shtml</a></td>
-                                        <td> 市政府办公厅  </td>
-                                        <td> 洪府发〔2018〕21号  </td>
-                                        <td>2018-10-17 </td>
-                                        <td>有效</td>
-                                    </tr>
-                                    <tr>
-                                        <td>南昌市人民政府关于印发南昌市政府投资项目申报操作细则（试行）的通知 </td>
-                                        <td><a href="http://www.nc.gov.cn/xxgkpt/qtygwj/201810/daa504e865c54902a6a4551730ad7d6b.shtml" target="_blank">http://www.nc.gov.cn/xxgkpt/qtygwj/201810/daa504e865c54902a6a4551730ad7d6b.shtml</a></td>
-                                        <td> 市政府办公厅  </td>
-                                        <td> 洪府发〔2018〕21号  </td>
-                                        <td>2018-10-17 </td>
-                                        <td>有效</td>
-                                    </tr>   <tr>
-                                        <td>南昌市人民政府关于印发南昌市政府投资项目申报操作细则（试行）的通知 </td>
-                                        <td><a href="http://www.nc.gov.cn/xxgkpt/qtygwj/201810/daa504e865c54902a6a4551730ad7d6b.shtml" target="_blank">http://www.nc.gov.cn/xxgkpt/qtygwj/201810/daa504e865c54902a6a4551730ad7d6b.shtml</a></td>
-                                        <td> 市政府办公厅  </td>
-                                        <td> 洪府发〔2018〕21号  </td>
-                                        <td>2018-10-17 </td>
-                                        <td>有效</td>
-                                    </tr>   <tr>
-                                        <td>南昌市人民政府关于印发南昌市政府投资项目申报操作细则（试行）的通知 </td>
-                                        <td><a href="http://www.nc.gov.cn/xxgkpt/qtygwj/201810/daa504e865c54902a6a4551730ad7d6b.shtml" target="_blank">http://www.nc.gov.cn/xxgkpt/qtygwj/201810/daa504e865c54902a6a4551730ad7d6b.shtml</a></td>
-                                        <td> 市政府办公厅  </td>
-                                        <td> 洪府发〔2018〕21号  </td>
-                                        <td>2018-10-17 </td>
-                                        <td>有效</td>
+                                    <tr th:each="Policy,status : ${Policy_list}" >
+                                        <td id="policyName" th:text = "${Policy.policy_name}"></td>
+                                        <td ><a th:href = "${Policy.policy_link}" target="_blank"><span th:text = "${Policy.policy_link}"></span></a></td>
+                                        <td th:text = "${Policy.department}"></td>
+                                        <td th:text = "洪府发〔2019〕+${Policy.policy_id}+号"></td>
                                     </tr>
                                     </tbody>
                                 </table>
                             </div>
                         </div>
                     </div>
-
-                    <div class="col-md-12 col-sm-12 col-xs-12">
-                        <div class="x_panel">
-                            <div class="x_title">
-                                <h2>市政府办公厅文件</h2>
-
-                                <div class="clearfix"></div>
-                            </div>
-                            <div class="x_content">
-
-                                <table id="datatable" class="table table-striped table-bordered">
-                                    <thead>
-                                    <tr>
-                                        <th>文件名</th>
-                                        <th>链接</th>
-                                        <th>部门</th>
-                                        <th>编号</th>
-                                        <th>日期</th>
-                                        <th>有效性</th>
-                                    </tr>
-                                    </thead>
-
-
-                                    <tbody>
-                                    <tr>
-                                        <td>南昌市人民政府关于印发南昌市政府投资项目申报操作细则（试行）的通知 </td>
-                                        <td><a href="http://www.nc.gov.cn/xxgkpt/qtygwj/201810/daa504e865c54902a6a4551730ad7d6b.shtml" target="_blank">http://www.nc.gov.cn/xxgkpt/qtygwj/201810/daa504e865c54902a6a4551730ad7d6b.shtml</a></td>
-                                        <td> 市政府办公厅  </td>
-                                        <td> 洪府发〔2018〕21号  </td>
-                                        <td>2018-10-17 </td>
-                                        <td>有效</td>
-                                    </tr>
-                                    <tr>
-                                        <td>南昌市人民政府关于印发南昌市政府投资项目申报操作细则（试行）的通知 </td>
-                                        <td><a href="http://www.nc.gov.cn/xxgkpt/qtygwj/201810/daa504e865c54902a6a4551730ad7d6b.shtml" target="_blank">http://www.nc.gov.cn/xxgkpt/qtygwj/201810/daa504e865c54902a6a4551730ad7d6b.shtml</a></td>
-                                        <td> 市政府办公厅  </td>
-                                        <td> 洪府发〔2018〕21号  </td>
-                                        <td>2018-10-17 </td>
-                                        <td>有效</td>
-                                    </tr>   <tr>
-                                        <td>南昌市人民政府关于印发南昌市政府投资项目申报操作细则（试行）的通知 </td>
-                                        <td><a href="http://www.nc.gov.cn/xxgkpt/qtygwj/201810/daa504e865c54902a6a4551730ad7d6b.shtml" target="_blank">http://www.nc.gov.cn/xxgkpt/qtygwj/201810/daa504e865c54902a6a4551730ad7d6b.shtml</a></td>
-                                        <td> 市政府办公厅  </td>
-                                        <td> 洪府发〔2018〕21号  </td>
-                                        <td>2018-10-17 </td>
-                                        <td>有效</td>
-                                    </tr>   <tr>
-                                        <td>南昌市人民政府关于印发南昌市政府投资项目申报操作细则（试行）的通知 </td>
-                                        <td><a href="http://www.nc.gov.cn/xxgkpt/qtygwj/201810/daa504e865c54902a6a4551730ad7d6b.shtml" target="_blank">http://www.nc.gov.cn/xxgkpt/qtygwj/201810/daa504e865c54902a6a4551730ad7d6b.shtml</a></td>
-                                        <td> 市政府办公厅  </td>
-                                        <td> 洪府发〔2018〕21号  </td>
-                                        <td>2018-10-17 </td>
-                                        <td>有效</td>
-                                    </tr>   <tr>
-                                        <td>南昌市人民政府关于印发南昌市政府投资项目申报操作细则（试行）的通知 </td>
-                                        <td><a href="http://www.nc.gov.cn/xxgkpt/qtygwj/201810/daa504e865c54902a6a4551730ad7d6b.shtml" target="_blank">http://www.nc.gov.cn/xxgkpt/qtygwj/201810/daa504e865c54902a6a4551730ad7d6b.shtml</a></td>
-                                        <td> 市政府办公厅  </td>
-                                        <td> 洪府发〔2018〕21号  </td>
-                                        <td>2018-10-17 </td>
-                                        <td>有效</td>
-                                    </tr>   <tr>
-                                        <td>南昌市人民政府关于印发南昌市政府投资项目申报操作细则（试行）的通知 </td>
-                                        <td><a href="http://www.nc.gov.cn/xxgkpt/qtygwj/201810/daa504e865c54902a6a4551730ad7d6b.shtml" target="_blank">http://www.nc.gov.cn/xxgkpt/qtygwj/201810/daa504e865c54902a6a4551730ad7d6b.shtml</a></td>
-                                        <td> 市政府办公厅  </td>
-                                        <td> 洪府发〔2018〕21号  </td>
-                                        <td>2018-10-17 </td>
-                                        <td>有效</td>
-                                    </tr>   <tr>
-                                        <td>南昌市人民政府关于印发南昌市政府投资项目申报操作细则（试行）的通知 </td>
-                                        <td><a href="http://www.nc.gov.cn/xxgkpt/qtygwj/201810/daa504e865c54902a6a4551730ad7d6b.shtml" target="_blank">http://www.nc.gov.cn/xxgkpt/qtygwj/201810/daa504e865c54902a6a4551730ad7d6b.shtml</a></td>
-                                        <td> 市政府办公厅  </td>
-                                        <td> 洪府发〔2018〕21号  </td>
-                                        <td>2018-10-17 </td>
-                                        <td>有效</td>
-                                    </tr>   <tr>
-                                        <td>南昌市人民政府关于印发南昌市政府投资项目申报操作细则（试行）的通知 </td>
-                                        <td><a href="http://www.nc.gov.cn/xxgkpt/qtygwj/201810/daa504e865c54902a6a4551730ad7d6b.shtml" target="_blank">http://www.nc.gov.cn/xxgkpt/qtygwj/201810/daa504e865c54902a6a4551730ad7d6b.shtml</a></td>
-                                        <td> 市政府办公厅  </td>
-                                        <td> 洪府发〔2018〕21号  </td>
-                                        <td>2018-10-17 </td>
-                                        <td>有效</td>
-                                    </tr>   <tr>
-                                        <td>南昌市人民政府关于印发南昌市政府投资项目申报操作细则（试行）的通知 </td>
-                                        <td><a href="http://www.nc.gov.cn/xxgkpt/qtygwj/201810/daa504e865c54902a6a4551730ad7d6b.shtml" target="_blank">http://www.nc.gov.cn/xxgkpt/qtygwj/201810/daa504e865c54902a6a4551730ad7d6b.shtml</a></td>
-                                        <td> 市政府办公厅  </td>
-                                        <td> 洪府发〔2018〕21号  </td>
-                                        <td>2018-10-17 </td>
-                                        <td>有效</td>
-                                    </tr>   <tr>
-                                        <td>南昌市人民政府关于印发南昌市政府投资项目申报操作细则（试行）的通知 </td>
-                                        <td><a href="http://www.nc.gov.cn/xxgkpt/qtygwj/201810/daa504e865c54902a6a4551730ad7d6b.shtml" target="_blank">http://www.nc.gov.cn/xxgkpt/qtygwj/201810/daa504e865c54902a6a4551730ad7d6b.shtml</a></td>
-                                        <td> 市政府办公厅  </td>
-                                        <td> 洪府发〔2018〕21号  </td>
-                                        <td>2018-10-17 </td>
-                                        <td>有效</td>
-                                    </tr>   <tr>
-                                        <td>南昌市人民政府关于印发南昌市政府投资项目申报操作细则（试行）的通知 </td>
-                                        <td><a href="http://www.nc.gov.cn/xxgkpt/qtygwj/201810/daa504e865c54902a6a4551730ad7d6b.shtml" target="_blank">http://www.nc.gov.cn/xxgkpt/qtygwj/201810/daa504e865c54902a6a4551730ad7d6b.shtml</a></td>
-                                        <td> 市政府办公厅  </td>
-                                        <td> 洪府发〔2018〕21号  </td>
-                                        <td>2018-10-17 </td>
-                                        <td>有效</td>
-                                    </tr>
-                                    <tr>
-                                        <td>南昌市人民政府关于印发南昌市政府投资项目申报操作细则（试行）的通知 </td>
-                                        <td><a href="http://www.nc.gov.cn/xxgkpt/qtygwj/201810/daa504e865c54902a6a4551730ad7d6b.shtml" target="_blank">http://www.nc.gov.cn/xxgkpt/qtygwj/201810/daa504e865c54902a6a4551730ad7d6b.shtml</a></td>
-                                        <td> 市政府办公厅  </td>
-                                        <td> 洪府发〔2018〕21号  </td>
-                                        <td>2018-10-17 </td>
-                                        <td>有效</td>
-                                    </tr>   <tr>
-                                        <td>南昌市人民政府关于印发南昌市政府投资项目申报操作细则（试行）的通知 </td>
-                                        <td><a href="http://www.nc.gov.cn/xxgkpt/qtygwj/201810/daa504e865c54902a6a4551730ad7d6b.shtml" target="_blank">http://www.nc.gov.cn/xxgkpt/qtygwj/201810/daa504e865c54902a6a4551730ad7d6b.shtml</a></td>
-                                        <td> 市政府办公厅  </td>
-                                        <td> 洪府发〔2018〕21号  </td>
-                                        <td>2018-10-17 </td>
-                                        <td>有效</td>
-                                    </tr>   <tr>
-                                        <td>南昌市人民政府关于印发南昌市政府投资项目申报操作细则（试行）的通知 </td>
-                                        <td><a href="http://www.nc.gov.cn/xxgkpt/qtygwj/201810/daa504e865c54902a6a4551730ad7d6b.shtml" target="_blank">http://www.nc.gov.cn/xxgkpt/qtygwj/201810/daa504e865c54902a6a4551730ad7d6b.shtml</a></td>
-                                        <td> 市政府办公厅  </td>
-                                        <td> 洪府发〔2018〕21号  </td>
-                                        <td>2018-10-17 </td>
-                                        <td>有效</td>
-                                    </tr>
-                                    </tbody>
-                                </table>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-md-12 col-sm-12 col-xs-12">
-                        <div class="x_panel">
-                            <div class="x_title">
-                                <h2>部门文件</h2>
-
-                                <div class="clearfix"></div>
-                            </div>
-                            <div class="x_content">
-
-                                <table id="datatable-fixed-header" class="table table-striped table-bordered">
-                                    <thead>
-                                    <tr>
-                                        <th>文件名</th>
-                                        <th>链接</th>
-                                        <th>部门</th>
-                                        <th>编号</th>
-                                        <th>日期</th>
-                                        <th>有效性</th>
-                                    </tr>
-                                    </thead>
-                                    <tbody>
-                                    <tr>
-                                        <td>南昌市人民政府关于印发南昌市政府投资项目申报操作细则（试行）的通知 </td>
-                                        <td><a href="http://www.nc.gov.cn/xxgkpt/qtygwj/201810/daa504e865c54902a6a4551730ad7d6b.shtml" target="_blank">http://www.nc.gov.cn/xxgkpt/qtygwj/201810/daa504e865c54902a6a4551730ad7d6b.shtml</a></td>
-                                        <td> 市政府办公厅  </td>
-                                        <td> 洪府发〔2018〕21号  </td>
-                                        <td>2018-10-17 </td>
-                                        <td>有效</td>
-                                    </tr>
-                                    <tr>
-                                        <td>南昌市人民政府关于印发南昌市政府投资项目申报操作细则（试行）的通知 </td>
-                                        <td><a href="http://www.nc.gov.cn/xxgkpt/qtygwj/201810/daa504e865c54902a6a4551730ad7d6b.shtml" target="_blank">http://www.nc.gov.cn/xxgkpt/qtygwj/201810/daa504e865c54902a6a4551730ad7d6b.shtml</a></td>
-                                        <td> 市政府办公厅  </td>
-                                        <td> 洪府发〔2018〕21号  </td>
-                                        <td>2018-10-17 </td>
-                                        <td>有效</td>
-                                    </tr>   <tr>
-                                        <td>南昌市人民政府关于印发南昌市政府投资项目申报操作细则（试行）的通知 </td>
-                                        <td><a href="http://www.nc.gov.cn/xxgkpt/qtygwj/201810/daa504e865c54902a6a4551730ad7d6b.shtml" target="_blank">http://www.nc.gov.cn/xxgkpt/qtygwj/201810/daa504e865c54902a6a4551730ad7d6b.shtml</a></td>
-                                        <td> 市政府办公厅  </td>
-                                        <td> 洪府发〔2018〕21号  </td>
-                                        <td>2018-10-17 </td>
-                                        <td>有效</td>
-                                    </tr>   <tr>
-                                        <td>南昌市人民政府关于印发南昌市政府投资项目申报操作细则（试行）的通知 </td>
-                                        <td><a href="http://www.nc.gov.cn/xxgkpt/qtygwj/201810/daa504e865c54902a6a4551730ad7d6b.shtml" target="_blank">http://www.nc.gov.cn/xxgkpt/qtygwj/201810/daa504e865c54902a6a4551730ad7d6b.shtml</a></td>
-                                        <td> 市政府办公厅  </td>
-                                        <td> 洪府发〔2018〕21号  </td>
-                                        <td>2018-10-17 </td>
-                                        <td>有效</td>
-                                    </tr>   <tr>
-                                        <td>南昌市人民政府关于印发南昌市政府投资项目申报操作细则（试行）的通知 </td>
-                                        <td><a href="http://www.nc.gov.cn/xxgkpt/qtygwj/201810/daa504e865c54902a6a4551730ad7d6b.shtml" target="_blank">http://www.nc.gov.cn/xxgkpt/qtygwj/201810/daa504e865c54902a6a4551730ad7d6b.shtml</a></td>
-                                        <td> 市政府办公厅  </td>
-                                        <td> 洪府发〔2018〕21号  </td>
-                                        <td>2018-10-17 </td>
-                                        <td>有效</td>
-                                    </tr>   <tr>
-                                        <td>南昌市人民政府关于印发南昌市政府投资项目申报操作细则（试行）的通知 </td>
-                                        <td><a href="http://www.nc.gov.cn/xxgkpt/qtygwj/201810/daa504e865c54902a6a4551730ad7d6b.shtml" target="_blank">http://www.nc.gov.cn/xxgkpt/qtygwj/201810/daa504e865c54902a6a4551730ad7d6b.shtml</a></td>
-                                        <td> 市政府办公厅  </td>
-                                        <td> 洪府发〔2018〕21号  </td>
-                                        <td>2018-10-17 </td>
-                                        <td>有效</td>
-                                    </tr>   <tr>
-                                        <td>南昌市人民政府关于印发南昌市政府投资项目申报操作细则（试行）的通知 </td>
-                                        <td><a href="http://www.nc.gov.cn/xxgkpt/qtygwj/201810/daa504e865c54902a6a4551730ad7d6b.shtml" target="_blank">http://www.nc.gov.cn/xxgkpt/qtygwj/201810/daa504e865c54902a6a4551730ad7d6b.shtml</a></td>
-                                        <td> 市政府办公厅  </td>
-                                        <td> 洪府发〔2018〕21号  </td>
-                                        <td>2018-10-17 </td>
-                                        <td>有效</td>
-                                    </tr>   <tr>
-                                        <td>南昌市人民政府关于印发南昌市政府投资项目申报操作细则（试行）的通知 </td>
-                                        <td><a href="http://www.nc.gov.cn/xxgkpt/qtygwj/201810/daa504e865c54902a6a4551730ad7d6b.shtml" target="_blank">http://www.nc.gov.cn/xxgkpt/qtygwj/201810/daa504e865c54902a6a4551730ad7d6b.shtml</a></td>
-                                        <td> 市政府办公厅  </td>
-                                        <td> 洪府发〔2018〕21号  </td>
-                                        <td>2018-10-17 </td>
-                                        <td>有效</td>
-                                    </tr>   <tr>
-                                        <td>南昌市人民政府关于印发南昌市政府投资项目申报操作细则（试行）的通知 </td>
-                                        <td><a href="http://www.nc.gov.cn/xxgkpt/qtygwj/201810/daa504e865c54902a6a4551730ad7d6b.shtml" target="_blank">http://www.nc.gov.cn/xxgkpt/qtygwj/201810/daa504e865c54902a6a4551730ad7d6b.shtml</a></td>
-                                        <td> 市政府办公厅  </td>
-                                        <td> 洪府发〔2018〕21号  </td>
-                                        <td>2018-10-17 </td>
-                                        <td>有效</td>
-                                    </tr>   <tr>
-                                        <td>南昌市人民政府关于印发南昌市政府投资项目申报操作细则（试行）的通知 </td>
-                                        <td><a href="http://www.nc.gov.cn/xxgkpt/qtygwj/201810/daa504e865c54902a6a4551730ad7d6b.shtml" target="_blank">http://www.nc.gov.cn/xxgkpt/qtygwj/201810/daa504e865c54902a6a4551730ad7d6b.shtml</a></td>
-                                        <td> 市政府办公厅  </td>
-                                        <td> 洪府发〔2018〕21号  </td>
-                                        <td>2018-10-17 </td>
-                                        <td>有效</td>
-                                    </tr>   <tr>
-                                        <td>南昌市人民政府关于印发南昌市政府投资项目申报操作细则（试行）的通知 </td>
-                                        <td><a href="http://www.nc.gov.cn/xxgkpt/qtygwj/201810/daa504e865c54902a6a4551730ad7d6b.shtml" target="_blank">http://www.nc.gov.cn/xxgkpt/qtygwj/201810/daa504e865c54902a6a4551730ad7d6b.shtml</a></td>
-                                        <td> 市政府办公厅  </td>
-                                        <td> 洪府发〔2018〕21号  </td>
-                                        <td>2018-10-17 </td>
-                                        <td>有效</td>
-                                    </tr>
-                                    <tr>
-                                        <td>南昌市人民政府关于印发南昌市政府投资项目申报操作细则（试行）的通知 </td>
-                                        <td><a href="http://www.nc.gov.cn/xxgkpt/qtygwj/201810/daa504e865c54902a6a4551730ad7d6b.shtml" target="_blank">http://www.nc.gov.cn/xxgkpt/qtygwj/201810/daa504e865c54902a6a4551730ad7d6b.shtml</a></td>
-                                        <td> 市政府办公厅  </td>
-                                        <td> 洪府发〔2018〕21号  </td>
-                                        <td>2018-10-17 </td>
-                                        <td>有效</td>
-                                    </tr>   <tr>
-                                        <td>南昌市人民政府关于印发南昌市政府投资项目申报操作细则（试行）的通知 </td>
-                                        <td><a href="http://www.nc.gov.cn/xxgkpt/qtygwj/201810/daa504e865c54902a6a4551730ad7d6b.shtml" target="_blank">http://www.nc.gov.cn/xxgkpt/qtygwj/201810/daa504e865c54902a6a4551730ad7d6b.shtml</a></td>
-                                        <td> 市政府办公厅  </td>
-                                        <td> 洪府发〔2018〕21号  </td>
-                                        <td>2018-10-17 </td>
-                                        <td>有效</td>
-                                    </tr>   <tr>
-                                        <td>南昌市人民政府关于印发南昌市政府投资项目申报操作细则（试行）的通知 </td>
-                                        <td><a href="http://www.nc.gov.cn/xxgkpt/qtygwj/201810/daa504e865c54902a6a4551730ad7d6b.shtml" target="_blank">http://www.nc.gov.cn/xxgkpt/qtygwj/201810/daa504e865c54902a6a4551730ad7d6b.shtml</a></td>
-                                        <td> 市政府办公厅  </td>
-                                        <td> 洪府发〔2018〕21号  </td>
-                                        <td>2018-10-17 </td>
-                                        <td>有效</td>
-                                    </tr>
-                                    </tbody>
-                                </table>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-md-12 col-sm-12 col-xs-12">
-                        <div class="x_panel">
-                            <div class="x_title">
-                                <h2>区县文件</h2>
-
-                                <div class="clearfix"></div>
-                            </div>
-                            <div class="x_content">
-                                <div class="row">
-                                    <div class="col-sm-12">
-                                        <div class="card-box table-responsive">
-
-                                            <table id="datatable-keytable" class="table table-striped table-bordered">
-                                                <thead>
-                                                <tr>
-                                                    <th>文件名</th>
-                                                    <th>链接</th>
-                                                    <th>部门</th>
-                                                    <th>编号</th>
-                                                    <th>日期</th>
-                                                    <th>有效性</th>
-                                                </tr>
-                                                </thead>
-                                                <tbody>
-                                                <tr>
-                                                    <td>南昌市人民政府关于印发南昌市政府投资项目申报操作细则（试行）的通知 </td>
-                                                    <td><a href="http://www.nc.gov.cn/xxgkpt/qtygwj/201810/daa504e865c54902a6a4551730ad7d6b.shtml" target="_blank">http://www.nc.gov.cn/xxgkpt/qtygwj/201810/daa504e865c54902a6a4551730ad7d6b.shtml</a></td>
-                                                    <td> 市政府办公厅  </td>
-                                                    <td> 洪府发〔2018〕21号  </td>
-                                                    <td>2018-10-17 </td>
-                                                    <td>有效</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>南昌市人民政府关于印发南昌市政府投资项目申报操作细则（试行）的通知 </td>
-                                                    <td><a href="http://www.nc.gov.cn/xxgkpt/qtygwj/201810/daa504e865c54902a6a4551730ad7d6b.shtml" target="_blank">http://www.nc.gov.cn/xxgkpt/qtygwj/201810/daa504e865c54902a6a4551730ad7d6b.shtml</a></td>
-                                                    <td> 市政府办公厅  </td>
-                                                    <td> 洪府发〔2018〕21号  </td>
-                                                    <td>2018-10-17 </td>
-                                                    <td>有效</td>
-                                                </tr>   <tr>
-                                                    <td>南昌市人民政府关于印发南昌市政府投资项目申报操作细则（试行）的通知 </td>
-                                                    <td><a href="http://www.nc.gov.cn/xxgkpt/qtygwj/201810/daa504e865c54902a6a4551730ad7d6b.shtml" target="_blank">http://www.nc.gov.cn/xxgkpt/qtygwj/201810/daa504e865c54902a6a4551730ad7d6b.shtml</a></td>
-                                                    <td> 市政府办公厅  </td>
-                                                    <td> 洪府发〔2018〕21号  </td>
-                                                    <td>2018-10-17 </td>
-                                                    <td>有效</td>
-                                                </tr>   <tr>
-                                                    <td>南昌市人民政府关于印发南昌市政府投资项目申报操作细则（试行）的通知 </td>
-                                                    <td><a href="http://www.nc.gov.cn/xxgkpt/qtygwj/201810/daa504e865c54902a6a4551730ad7d6b.shtml" target="_blank">http://www.nc.gov.cn/xxgkpt/qtygwj/201810/daa504e865c54902a6a4551730ad7d6b.shtml</a></td>
-                                                    <td> 市政府办公厅  </td>
-                                                    <td> 洪府发〔2018〕21号  </td>
-                                                    <td>2018-10-17 </td>
-                                                    <td>有效</td>
-                                                </tr>   <tr>
-                                                    <td>南昌市人民政府关于印发南昌市政府投资项目申报操作细则（试行）的通知 </td>
-                                                    <td><a href="http://www.nc.gov.cn/xxgkpt/qtygwj/201810/daa504e865c54902a6a4551730ad7d6b.shtml" target="_blank">http://www.nc.gov.cn/xxgkpt/qtygwj/201810/daa504e865c54902a6a4551730ad7d6b.shtml</a></td>
-                                                    <td> 市政府办公厅  </td>
-                                                    <td> 洪府发〔2018〕21号  </td>
-                                                    <td>2018-10-17 </td>
-                                                    <td>有效</td>
-                                                </tr>   <tr>
-                                                    <td>南昌市人民政府关于印发南昌市政府投资项目申报操作细则（试行）的通知 </td>
-                                                    <td><a href="http://www.nc.gov.cn/xxgkpt/qtygwj/201810/daa504e865c54902a6a4551730ad7d6b.shtml" target="_blank">http://www.nc.gov.cn/xxgkpt/qtygwj/201810/daa504e865c54902a6a4551730ad7d6b.shtml</a></td>
-                                                    <td> 市政府办公厅  </td>
-                                                    <td> 洪府发〔2018〕21号  </td>
-                                                    <td>2018-10-17 </td>
-                                                    <td>有效</td>
-                                                </tr>   <tr>
-                                                    <td>南昌市人民政府关于印发南昌市政府投资项目申报操作细则（试行）的通知 </td>
-                                                    <td><a href="http://www.nc.gov.cn/xxgkpt/qtygwj/201810/daa504e865c54902a6a4551730ad7d6b.shtml" target="_blank">http://www.nc.gov.cn/xxgkpt/qtygwj/201810/daa504e865c54902a6a4551730ad7d6b.shtml</a></td>
-                                                    <td> 市政府办公厅  </td>
-                                                    <td> 洪府发〔2018〕21号  </td>
-                                                    <td>2018-10-17 </td>
-                                                    <td>有效</td>
-                                                </tr>   <tr>
-                                                    <td>南昌市人民政府关于印发南昌市政府投资项目申报操作细则（试行）的通知 </td>
-                                                    <td><a href="http://www.nc.gov.cn/xxgkpt/qtygwj/201810/daa504e865c54902a6a4551730ad7d6b.shtml" target="_blank">http://www.nc.gov.cn/xxgkpt/qtygwj/201810/daa504e865c54902a6a4551730ad7d6b.shtml</a></td>
-                                                    <td> 市政府办公厅  </td>
-                                                    <td> 洪府发〔2018〕21号  </td>
-                                                    <td>2018-10-17 </td>
-                                                    <td>有效</td>
-                                                </tr>   <tr>
-                                                    <td>南昌市人民政府关于印发南昌市政府投资项目申报操作细则（试行）的通知 </td>
-                                                    <td><a href="http://www.nc.gov.cn/xxgkpt/qtygwj/201810/daa504e865c54902a6a4551730ad7d6b.shtml" target="_blank">http://www.nc.gov.cn/xxgkpt/qtygwj/201810/daa504e865c54902a6a4551730ad7d6b.shtml</a></td>
-                                                    <td> 市政府办公厅  </td>
-                                                    <td> 洪府发〔2018〕21号  </td>
-                                                    <td>2018-10-17 </td>
-                                                    <td>有效</td>
-                                                </tr>   <tr>
-                                                    <td>南昌市人民政府关于印发南昌市政府投资项目申报操作细则（试行）的通知 </td>
-                                                    <td><a href="http://www.nc.gov.cn/xxgkpt/qtygwj/201810/daa504e865c54902a6a4551730ad7d6b.shtml" target="_blank">http://www.nc.gov.cn/xxgkpt/qtygwj/201810/daa504e865c54902a6a4551730ad7d6b.shtml</a></td>
-                                                    <td> 市政府办公厅  </td>
-                                                    <td> 洪府发〔2018〕21号  </td>
-                                                    <td>2018-10-17 </td>
-                                                    <td>有效</td>
-                                                </tr>   <tr>
-                                                    <td>南昌市人民政府关于印发南昌市政府投资项目申报操作细则（试行）的通知 </td>
-                                                    <td><a href="http://www.nc.gov.cn/xxgkpt/qtygwj/201810/daa504e865c54902a6a4551730ad7d6b.shtml" target="_blank">http://www.nc.gov.cn/xxgkpt/qtygwj/201810/daa504e865c54902a6a4551730ad7d6b.shtml</a></td>
-                                                    <td> 市政府办公厅  </td>
-                                                    <td> 洪府发〔2018〕21号  </td>
-                                                    <td>2018-10-17 </td>
-                                                    <td>有效</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>南昌市人民政府关于印发南昌市政府投资项目申报操作细则（试行）的通知 </td>
-                                                    <td><a href="http://www.nc.gov.cn/xxgkpt/qtygwj/201810/daa504e865c54902a6a4551730ad7d6b.shtml" target="_blank">http://www.nc.gov.cn/xxgkpt/qtygwj/201810/daa504e865c54902a6a4551730ad7d6b.shtml</a></td>
-                                                    <td> 市政府办公厅  </td>
-                                                    <td> 洪府发〔2018〕21号  </td>
-                                                    <td>2018-10-17 </td>
-                                                    <td>有效</td>
-                                                </tr>   <tr>
-                                                    <td>南昌市人民政府关于印发南昌市政府投资项目申报操作细则（试行）的通知 </td>
-                                                    <td><a href="http://www.nc.gov.cn/xxgkpt/qtygwj/201810/daa504e865c54902a6a4551730ad7d6b.shtml" target="_blank">http://www.nc.gov.cn/xxgkpt/qtygwj/201810/daa504e865c54902a6a4551730ad7d6b.shtml</a></td>
-                                                    <td> 市政府办公厅  </td>
-                                                    <td> 洪府发〔2018〕21号  </td>
-                                                    <td>2018-10-17 </td>
-                                                    <td>有效</td>
-                                                </tr>   <tr>
-                                                    <td>南昌市人民政府关于印发南昌市政府投资项目申报操作细则（试行）的通知 </td>
-                                                    <td><a href="http://www.nc.gov.cn/xxgkpt/qtygwj/201810/daa504e865c54902a6a4551730ad7d6b.shtml" target="_blank">http://www.nc.gov.cn/xxgkpt/qtygwj/201810/daa504e865c54902a6a4551730ad7d6b.shtml</a></td>
-                                                    <td> 市政府办公厅  </td>
-                                                    <td> 洪府发〔2018〕21号  </td>
-                                                    <td>2018-10-17 </td>
-                                                    <td>有效</td>
-                                                </tr>
-                                                </tbody>
-                                            </table>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
                 </div>
             </div>
         </div>
+
+
+
+
         <!-- /page content -->
         <footer>
-
+            <div class="pull-right">
+                &nbsp;
+            </div>
             <div class="clearfix"></div>
         </footer>
     </div>
 </div>
 
 <!-- jQuery -->
-<script src="../vendors/jquery/dist/jquery.min.js"></script>/*打印全部四个*/
+<script src="../vendors/jquery/dist/jquery.min.js"></script>
 <!-- Bootstrap -->
 <script src="../vendors/bootstrap/dist/js/bootstrap.min.js"></script>
 <!-- FastClick -->
@@ -693,6 +202,33 @@
 <script src="../vendors/pdfmake/build/vfs_fonts.js"></script>
 <!-- Custom Theme Scripts -->
 <script src="../build/js/custom.min.js"></script>
+<script>
+    $("#delete").click(function () {//监听删除a标签
+        console.log($("#policyName").text())
+        $.ajax({
+            type: "post",//请求方式
+            url: "/gen/deleteGen",//路径
+            data: {GenName:$("#policyName").text()},//参数
+            success: function(data){//请求成功时回调，data返回数据
+                if(data==true){
+                    alert("删除成功!")
+                    window.location.reload();
+                }else{
+                    alert("删除失败!")
+                }
+            }
+        });
+    })
+    $("#retInput").click(function () {
+        window.location.href="/gen/webs";
+    })
+</script>
 
+
+<script>
+    $(function () {
+        $("[data-toggle='popover']").popover();
+    });
+</script>
 </body>
 </html>

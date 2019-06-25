@@ -22,9 +22,13 @@ public interface personRepository {
     @ResultMap(value = "personMap")
     public person validperson(@Param("account") String account, @Param("password") String password);
 
-    @Select("select * from person where P_account like concat('%',#{P_account},'%')")
+    @Select("select * from person where P_name like concat('%',#{P_name},'%')")
   @ResultMap(value = "personMap")
-    public List<person> findByName(@Param("P_account") String P_account);
+    public List<person> findByName(@Param("P_name") String P_name);
+
+    @Select("select * from person where P_account like concat('%',#{P_account},'%')")
+    @ResultMap(value = "personMap")
+    public List<person> findByAccount(@Param("P_account") String P_account);
 
     @Insert("insert into person (P_name,P_account,P_password,type) values( #{name},#{account},#{p1},#{type})")
     @ResultMap(value = "personMap")

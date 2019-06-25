@@ -7,7 +7,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>走进南昌</title>
-  <link rel="icon" href="images/favicon.ico" type="image/ico" />
+
   <!-- Bootstrap -->
   <link href="../vendors/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
   <!-- Font Awesome -->
@@ -35,13 +35,13 @@
 </head>
 
 <body class="nav-md"style="background:#CE0000">
-<div class="container body">
+<div class="container body"style="background:#CE0000">
   <div class="main_container"style="background:#CE0000">
     <div class="col-md-3 left_col">
       <div class="left_col scroll-view"style="background:#CE0000">
         <div class="profile clearfix">
           <div class="profile_pic">
-            <img src="images/timg.jpg" alt="..." class="img-circle profile_img" style="margin-left:80px ">
+            <img src="/images/timg.png" alt="..." class="img-circle profile_img" style="margin-left:80px ">
           </div>
           <div class="navbar nav_title" style="border: 0;background: #CE0000">
             <h2 style="color: #FFFFFF;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;南昌市人民政府</h2>
@@ -59,7 +59,7 @@
               <li style="background: #CE0000"><a><i class="fa fa-home"></i> 网站主页 <span class="fa fa-chevron-down"></span></a>
                 <ul class="nav child_menu">
                   <li><a href="/log/index">走进南昌</a></li>
-                  <li><a href="/log/index2">南昌新闻</a></li>
+                  <li><a href="/log/news">南昌新闻</a></li>
                 </ul>
               </li>
               <li><a><i class="fa fa-edit"></i> 招商引资 <span class="fa fa-chevron-down"></span></a>
@@ -115,7 +115,7 @@
           </div>
           <div style="margin-left: 1200px">
             <tr th:each="person,status : ${us}" >
-              <a href="/log/change_password" style="font-size: 40px"> <td  th:text="${person.P_name}"></td></a>
+              <a href="/log/change_password"  style="font-size: 40px"> <td  th:text="${person.P_name}"></td></a>
             </tr>
           </div>
         </nav>
@@ -347,7 +347,9 @@
 
 <!-- footer content -->
 <footer>
-
+  <div class="pull-right">
+    &nbsp;&nbsp;
+  </div>
   <div class="clearfix"></div>
 </footer>
 <!-- /footer content -->

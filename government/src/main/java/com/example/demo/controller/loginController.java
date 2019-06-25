@@ -1,17 +1,15 @@
 package com.example.demo.controller;
 
 import com.example.demo.domain.Policy;
-import com.example.demo.domain.User;
+import com.example.demo.domain.message;
 import com.example.demo.domain.person;
 import com.example.demo.repository.PolicyRepository;
+import com.example.demo.repository.messageRepository;
 import com.example.demo.repository.personRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
-import com.example.demo.repository.UserRepository;
-import org.springframework.web.servlet.config.annotation.ViewControllerRegistration;
-import org.springframework.web.servlet.config.annotation.ViewControllerRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 
 import java.util.List;
@@ -25,8 +23,7 @@ public class loginController implements WebMvcConfigurer {//登陆控制器
     @Autowired
     private personRepository pe;
     @Autowired
-    private UserRepository ur;
-
+    private messageRepository ms;
 
     static List<person> us;
     @GetMapping("/")
@@ -36,9 +33,10 @@ public class loginController implements WebMvcConfigurer {//登陆控制器
 
     @GetMapping("/login")
     public String login( Model model, String account, String password) {
-        person p=pe.validperson(account, password);
-       us=pe.findByName(account);
+
+
         if (pe.validperson(account,password)!=null) {
+            us=pe.findByAccount(account);
             model.addAttribute("us",us);
             return "index";
         }
@@ -50,11 +48,9 @@ public class loginController implements WebMvcConfigurer {//登陆控制器
     @RequestMapping("/stu")
     public String su(Model model,String Pname,String Paccount, String p1){
       pe.addthem( Pname,Paccount,p1,2);
-         us=pe.findByName(Paccount);
+         us=pe.findByAccount(Paccount);
         model.addAttribute("us",us);
-
       return "index";
-
     }
     @GetMapping("/change")
     public String change(Model model,String password){
@@ -64,9 +60,12 @@ public class loginController implements WebMvcConfigurer {//登陆控制器
     return "index";
     }
     @GetMapping("/change_password")
-    public String ss( Model model) {
-
+    public String ss(String name, Model model) {
+        System.out.println(name);
         model.addAttribute("us",us);
+        if(us.get(0).getType()==1)
+            return "grzx";
+            else
         return "change_password";
     }
     @GetMapping("/calendar")
@@ -86,6 +85,8 @@ public class loginController implements WebMvcConfigurer {//登陆控制器
     }
     @GetMapping("/fixed_footer")
     public String s4( Model model) {
+        List<message> li=ms.findAll();
+        model.addAttribute("li",li);
         model.addAttribute("us",us);
         return "fixed_footer";
     }
@@ -99,8 +100,11 @@ public class loginController implements WebMvcConfigurer {//登陆控制器
         model.addAttribute("us",us);
         return "form";
     }
-    @GetMapping("/general_elements")
-    public String s7( Model model) {
+
+    @RequestMapping("/general_elements")
+    public String s7(Model model) {
+        List<Policy> p = Pr.findAll();
+        model.addAttribute("Policy_list",Pr.findAll());
         model.addAttribute("us",us);
         return "general_elements";
     }
@@ -119,5 +123,59 @@ public class loginController implements WebMvcConfigurer {//登陆控制器
 
         model.addAttribute("us",us);
         return "index";
+    }
+    @GetMapping("/grzx")
+    public String s11( Model model) {
+        model.addAttribute("us",us);
+        return "grzx";
+    }
+    @GetMapping("/out")
+    public String s12( Model model) {
+       us.clear();
+        model.addAttribute("us",us);
+        return "login";
+    }
+    @GetMapping("/video")
+    public String s13( Model model) {
+        model.addAttribute("us",us);
+        return "video";
+    }
+    @GetMapping("/news")
+    public String s14( Model model) {
+        List<Policy> p = Pr.findAll();
+        model.addAttribute("Policy_list",Pr.findAll());
+        model.addAttribute("us",us);
+        return "news";
+    }
+    @GetMapping("/change_general")
+    public String s15( Model model) {
+        List<Policy> p = Pr.findAll();
+        model.addAttribute("Policy_list",Pr.findAll());
+        model.addAttribute("us",us);
+        return "change_general";
+    }
+    @GetMapping("/change_video")
+    public String s16( Model model) {
+        model.addAttribute("us",us);
+        return "change_video";
+    }
+    @GetMapping("/createquestion")
+    public String s17( Model model) {
+        model.addAttribute("us",us);
+        return "createquestion";
+    }
+    @GetMapping("/change_news")
+    public String s18( Model model) {
+        List<Policy> p = Pr.findAll();
+        model.addAttribute("Policy_list",Pr.findAll());
+        model.addAttribute("us",us);
+        return "change_news";
+    }
+    @GetMapping("/change_message")
+    public String s19( Model model) {
+        List<message> li=ms.findAll();
+        model.addAttribute("li",li);
+        model.addAttribute("us",us);
+        return "change_message";
     }
 }
