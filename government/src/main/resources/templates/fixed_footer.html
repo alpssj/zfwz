@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <!-- Meta, title, CSS, favicons, etc. -->
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>民生反馈</title>
+
+  <!-- Bootstrap -->
+  <link href="../vendors/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Font Awesome -->
+  <link href="../vendors/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <!-- NProgress -->
+  <link href="../vendors/nprogress/nprogress.css" rel="stylesheet">
+  <!-- bootstrap-wysiwyg -->
+  <link href="../vendors/google-code-prettify/bin/prettify.min.css" rel="stylesheet">
+
+  <!-- Custom styling plus plugins -->
+  <link href="../build/css/custom.min.css" rel="stylesheet">
+</head>
+
+<body class="nav-md">
+<div class="container body"style="background:#CE0000">
+  <div class="main_container">
+    <div class="col-md-3 left_col">
+      <div class="left_col scroll-view"style="background:#CE0000">
+        <div class="profile clearfix">
+          <div class="profile_pic">
+            <img src="images/timg.png" alt="img" class="img-circle profile_img" style="margin-left:80px ">
+          </div>
+          <div class="navbar nav_title" style="border: 0;background: #CE0000">
+            <h2 style="color: #FFFFFF;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;南昌市人民政府</h2>
+          </div>
+
+          <div class="clearfix"></div>
+          <!-- menu profile quick info -->
+        </div>
+        <!-- /menu profile quick info -->
+        <br/>
+        <!-- sidebar menu -->
+        <div id="sidebar-menu" class="main_menu_side hidden-print main_menu">
+          <div class="menu_section">
+            <ul class="nav side-menu" >
+              <li style="background: #CE0000"><a><i class="fa fa-home"></i> 网站主页 <span class="fa fa-chevron-down"></span></a>
+                <ul class="nav child_menu">
+                  <li><a href="index.html">走进南昌</a></li>
+                  <li><a href="/new/news">南昌新闻</a></li>
+                </ul>
+              </li>
+              <li><a><i class="fa fa-edit"></i> 招商引资 <span class="fa fa-chevron-down"></span></a>
+                <ul class="nav child_menu">
+                  <li><a href="home">招商政策</a></li>
+                </ul>
+              </li>
+              <li><a><i class="fa fa-desktop"></i> 政策法规 <span class="fa fa-chevron-down"></span></a>
+                <ul class="nav child_menu">
+                  <li><a href="/gen/general_elements">普法宣传</a></li>
+                </ul>
+              </li>
+              <li><a><i class="fa fa-table"></i> 日程公开 <span class="fa fa-chevron-down"></span></a>
+                <ul class="nav child_menu">
+                  <li><a href="calendar">官员日程</a></li>
+                  <li><a href="/con/contacts">官员信息</a></li>
+                </ul>
+              </li>
+              <li><a><i class="fa fa-bar-chart-o"></i> 网站视频 <span class="fa fa-chevron-down"></span></a>
+                <ul class="nav child_menu">
+                  <li><a href="/vio/videoDate">精彩视频</a></li>
+                </ul>
+              </li>
+              <li><a><i class="fa fa-clone"></i>调查与反馈<span class="fa fa-chevron-down"></span></a>
+                <ul class="nav child_menu">
+                  <li><a href="fixed_sidebar.html">问卷调查</a></li>
+                  <li><a href="/">民生反馈</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+
+        </div>
+        <!-- /sidebar menu -->
+
+        <!-- /menu footer buttons -->
+        <div class="sidebar-footer hidden-small"style="background: #CE0000">
+
+          <a data-toggle="tooltip" data-placement="top" title="Logout" href="log/"style="background: #CE0000;margin-left: 80px">
+            <span class="glyphicon glyphicon-off" aria-hidden="true"></span>
+          </a>
+        </div>
+        <!-- /menu footer buttons -->
+      </div>
+    </div>
+
+    <!-- top navigation -->
+    <div class="top_nav">
+      <div class="nav_menu">
+        <nav>
+          <div class="nav toggle">
+            <a id="menu_toggle"><i class="fa fa-bars"></i></a>
+          </div>
+          <div style="margin-left: 1200px">
+            <a href="login.html" class="to_register"style="font-size: 20px"> 登录 </a>
+          </div>
+
+        </nav>
+      </div>
+    </div>
+    <!-- /top navigation -->
+
+    <!-- page content -->
+    <div class="right_col" role="main">
+      <div class="">
+
+        <div class="page-title">
+          <div class="title_left">
+            <h3>民生反馈 <small>今日好文推荐</small></h3>
+          </div>
+
+          <div class="title_right">
+            <div class="col-md-5 col-sm-5 col-xs-12 form-group pull-right top_search">
+              <div class="input-group">
+                <input type="text" class="form-control" placeholder="Search for...">
+                <span class="input-group-btn">
+                      <button class="btn btn-default" type="button">Go!</button>
+                    </span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="clearfix"></div>
+
+        <div class="row">
+          <div class="col-md-12">
+            <div class="x_panel">
+              <div class="x_title">
+                <h2>Inbox Design<small>User Mail</small></h2>
+
+                <div class="clearfix"></div>
+              </div>
+              <div class="x_content">
+                <div class="row">
+                  <div class="col-sm-3 mail_list_column">
+                    <button id="compose" class="btn btn-sm btn-success btn-block" type="button">COMPOSE</button>
+                    <a href="#">
+                      <div class="mail_list">
+                        <div class="left">
+                          <i class="fa fa-circle"></i> <i class="fa fa-edit"></i>
+                        </div>
+                        <div class="right">
+                          <h3>岳云鹏 <small>3.00 PM</small></h3>
+                          <p>论语是孔子及其弟子的语录结集，由孔子弟子及再传弟子编写而成，至战国前期成书。全书共20篇492章，以语录体为主，叙事体为辅.</p>
+                        </div>
+                      </div>
+                    </a>
+                    <a href="#">
+                      <div class="mail_list">
+                        <div class="left">
+                          <i class="fa fa-star"></i>
+                        </div>
+                        <div class="right">
+                          <h3>诸葛亮 <small>4.09 PM</small></h3>
+                          <p><span class="badge">To</span> 论语是孔子及其弟子的语录结集，由孔子弟子及再传弟子编写而成，至战国前期成书。全书共20篇492章，以语录体为主，叙事体为辅.</p>
+                        </div>
+                      </div>
+                    </a>
+                    <a href="#">
+                      <div class="mail_list">
+                        <div class="left">
+                          <i class="fa fa-circle-o"></i><i class="fa fa-paperclip"></i>
+                        </div>
+                        <div class="right">
+                          <h3>祝绪丹 <small>4.09 PM</small></h3>
+                          <p><span class="badge">CC</span> 论语是孔子及其弟子的语录结集，由孔子弟子及再传弟子编写而成，至战国前期成书。全书共20篇492章，以语录体为主，叙事体为辅. </p>
+                        </div>
+                      </div>
+                    </a>
+                    <a href="#">
+                      <div class="mail_list">
+                        <div class="left">
+                          <i class="fa fa-paperclip"></i>
+                        </div>
+                        <div class="right">
+                          <h3>百里玄策 <small>4.09 PM</small></h3>
+                          <p>论语是孔子及其弟子的语录结集，由孔子弟子及再传弟子编写而成，至战国前期成书。全书共20篇492章，以语录体为主，叙事体为辅.</p>
+                        </div>
+                      </div>
+                    </a>
+                    <a href="#">
+                      <div class="mail_list">
+                        <div class="left">
+                        </div>
+                        <div class="right">
+                          <h3>印度阿三<small>4.09 PM</small></h3>
+                          <p>论语是孔子及其弟子的语录结集，由孔子弟子及再传弟子编写而成，至战国前期成书。全书共20篇492章，以语录体为主，叙事体为辅.</p>
+                        </div>
+                      </div>
+                    </a>
+                    <a href="#">
+                      <div class="mail_list">
+                        <div class="left">
+                        </div>
+                        <div class="right">
+                          <h3>排骨饭<small>4.09 PM</small></h3>
+                          <p>论语是孔子及其弟子的语录结集，由孔子弟子及再传弟子编写而成，至战国前期成书。全书共20篇492章，以语录体为主，叙事体为辅.</p>
+                        </div>
+                      </div>
+                    </a>
+                    <a href="#">
+                      <div class="mail_list">
+                        <div class="left">
+                          <i class="fa fa-circle"></i> <i class="fa fa-edit"></i>
+                        </div>
+                        <div class="right">
+                          <h3>朗朗<small>3.00 PM</small></h3>
+                          <p>论语是孔子及其弟子的语录结集，由孔子弟子及再传弟子编写而成，至战国前期成书。全书共20篇492章，以语录体为主，叙事体为辅.</p>
+                        </div>
+                      </div>
+                    </a>
+                    <a href="#">
+                      <div class="mail_list">
+                        <div class="left">
+                          <i class="fa fa-star"></i>
+                        </div>
+                        <div class="right">
+                          <h3>刘涛<small>4.09 PM</small></h3>
+                          <p> 论语是孔子及其弟子的语录结集，由孔子弟子及再传弟子编写而成，至战国前期成书。全书共20篇492章，以语录体为主，叙事体为辅. </p>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                  <!-- /MAIL LIST -->
+
+                  <!-- CONTENT MAIL -->
+                  <div class="col-sm-9 mail_view">
+                    <div class="inbox-body">
+                      <div class="mail_heading row">
+                        <div class="col-md-8">
+                          <div class="btn-group">
+                            <button class="btn btn-sm btn-primary" type="button"><i class="fa fa-reply"></i> Reply</button>
+                            <button class="btn btn-sm btn-default" type="button"  data-placement="top" data-toggle="tooltip" data-original-title="Forward"><i class="fa fa-share"></i></button>
+                            <button class="btn btn-sm btn-default" type="button" data-placement="top" data-toggle="tooltip" data-original-title="Print"><i class="fa fa-print"></i></button>
+                            <button class="btn btn-sm btn-default" type="button" data-placement="top" data-toggle="tooltip" data-original-title="Trash"><i class="fa fa-trash-o"></i></button>
+                          </div>
+                        </div>
+                        <div class="col-md-4 text-right">
+                          <p class="date"> 8:02 PM 12 FEB 2014</p>
+                        </div>
+                        <div class="col-md-12">
+                          <h4> 深度好文《赤兔之死》</h4>
+                        </div>
+                      </div>
+                      <div class="sender-info">
+                        <div class="row">
+                          <div class="col-md-12">
+                            <strong>蒋昕捷</strong>
+                            <span></span>
+                            <strong></strong>
+                            <a class="sender-dropdown"><i class="fa fa-chevron-down"></i></a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="view-mail">
+                        <p>建安二十六年，公元221年，关羽走麦城，兵败遭擒，拒降，为孙权所害。其坐骑赤兔马为孙权赐予马忠。</p>
+                        <p>一日，马忠上表：赤兔马绝食数日，不久将亡。孙权大惊，急访江东名士伯喜。此人乃伯乐之后，人言其精通马语。</p>
+                        <p>马忠引伯喜回府，至槽间，但见赤兔马伏于地，哀嘶不止。众人不解，惟伯喜知之。伯喜遣散诸人，抚其背叹道：⑴“昔日曹操做《龟虽寿》，‘老骥伏枥，志在千里。烈士暮年，壮心不已’，吾深知君念关将军之恩义，欲从之于地下。然当日吕奉先白门楼殒命，亦未见君如此相依，为何今日这等轻生，岂不负君千里之志哉？”
+                          赤兔马哀嘶一声，叹道：⑵“予尝闻，‘鸟之将死，其鸣也哀；人之将死，其言也善。’今幸遇先生，吾可将肺腑之言相告。吾生于西凉，后为董卓所获，此人飞扬跋扈，杀少帝，卧龙床，实为汉贼，吾深恨之。”
+                          伯喜点头，曰：“后闻李儒献计，将君赠予吕布，吕布乃天下第一勇将，众皆言，‘人中吕布，马中赤兔。’想来不负君之志也。”
+                          赤兔马叹曰：“公言差矣。吕布此人最是无信，为荣华而杀丁原，为美色而刺董卓，投刘备而夺其徐州，结袁术而斩其婚使。‘人无信不立’，与此等无诚信之人齐名的，实为吾平生之大耻！后吾归于曹操，其手下虽猛将如云，却无人可称英雄。⑶吾恐今生祗辱于奴隶人之手，骈死于槽枥之间。后曹操将吾赠予关将军，吾曾于虎牢关前见其勇武，白门楼上见其恩义，仰慕已久。关将军见吾亦大喜，拜谢曹操。操问何故如此，关将军答曰：‘吾知此马日行千里，今幸得之，他日若知兄长下落，可一日而得见矣。’其人诚信如此。⑷常言道：‘鸟随鸾凤飞腾远，人伴贤良品质高。’吾敢不以死相报乎？”
+                          伯喜闻之，叹曰：“人皆言关将军乃诚信之士，今日所闻，果真如此。”</p>
+                        <p>赤兔马泣曰：⑸“吾常闻不食周粟之伯夷、叔齐之高义。⑹玉可碎而不可损其白，竹可破而不可毁其节。士为知己而死，人因诚信而存，吾安肯食吴粟而苟活于世间？”言罢，伏地而亡。
+                          伯喜放声痛哭，曰：⑺“物犹如此，人何以堪？”后奏于孙权。权闻之亦泣：“吾不知云长诚信如此，今忠义之士为吾所害，吾何面目见天下苍生？”
+                        </p>
+                        <p>后孙权传旨，将关羽父子并赤兔马厚葬。</p>
+
+                      </div>
+                      <div class="attachment">
+                        <p>
+                          <span><i class="fa fa-paperclip"></i> 3 attachments — </span>
+                          <a href="#">Download all attachments</a> |
+                          <a href="#">View all images</a>
+                        </p>
+                        <ul>
+                          <li>
+                            <a href="#" class="atch-thumb">
+                              <img src="images/inbox.png" alt="img" />
+                            </a>
+
+                            <div class="file-name">
+                              image-name.jpg
+                            </div>
+                            <span>12KB</span>
+
+
+                            <div class="links">
+                              <a href="#">View</a> -
+                              <a href="#">Download</a>
+                            </div>
+                          </li>
+
+                          <li>
+                            <a href="#" class="atch-thumb">
+                              <img src="images/inbox.png" alt="img" />
+                            </a>
+
+                            <div class="file-name">
+                              img_name.jpg
+                            </div>
+                            <span>40KB</span>
+
+                            <div class="links">
+                              <a href="#">View</a> -
+                              <a href="#">Download</a>
+                            </div>
+                          </li>
+                          <li>
+                            <a href="#" class="atch-thumb">
+                              <img src="images/inbox.png" alt="img" />
+                            </a>
+
+                            <div class="file-name">
+                              img_name.jpg
+                            </div>
+                            <span>30KB</span>
+
+                            <div class="links">
+                              <a href="#">View</a> -
+                              <a href="#">Download</a>
+                            </div>
+                          </li>
+
+                        </ul>
+                      </div>
+                      <div class="btn-group">
+                        <button class="btn btn-sm btn-primary" type="button"><i class="fa fa-reply"></i> Reply</button>
+                        <button class="btn btn-sm btn-default" type="button"  data-placement="top" data-toggle="tooltip" data-original-title="Forward"><i class="fa fa-share"></i></button>
+                        <button class="btn btn-sm btn-default" type="button" data-placement="top" data-toggle="tooltip" data-original-title="Print"><i class="fa fa-print"></i></button>
+                        <button class="btn btn-sm btn-default" type="button" data-placement="top" data-toggle="tooltip" data-original-title="Trash"><i class="fa fa-trash-o"></i></button>
+                      </div>
+                    </div>
+
+                  </div>
+                  <!-- /CONTENT MAIL -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- /page content -->
+
+    <!-- footer content -->
+    <footer>
+      <div class="pull-right">
+        Gentelella - Bootstrap Admin Template by <a href="https://colorlib.com">Colorlib</a>
+      </div>
+      <div class="clearfix"></div>
+    </footer>
+    <!-- /footer content -->
+  </div>
+</div>
+
+<!-- compose -->
+<div class="compose col-md-6 col-xs-12">
+  <div class="compose-header">
+    New Message
+    <button type="button" class="close compose-close">
+      <span>×</span>
+    </button>
+  </div>
+
+  <div class="compose-body">
+    <div id="alerts"></div>
+
+    <div class="btn-toolbar editor" data-role="editor-toolbar" data-target="#editor">
+      <div class="btn-group">
+        <a class="btn dropdown-toggle" data-toggle="dropdown" title="Font"><i class="fa fa-font"></i><b class="caret"></b></a>
+        <ul class="dropdown-menu">
+        </ul>
+      </div>
+
+      <div class="btn-group">
+        <a class="btn dropdown-toggle" data-toggle="dropdown" title="Font Size"><i class="fa fa-text-height"></i>&nbsp;<b class="caret"></b></a>
+        <ul class="dropdown-menu">
+          <li>
+            <a data-edit="fontSize 5">
+              <p style="font-size:17px">Huge</p>
+            </a>
+          </li>
+          <li>
+            <a data-edit="fontSize 3">
+              <p style="font-size:14px">Normal</p>
+            </a>
+          </li>
+          <li>
+            <a data-edit="fontSize 1">
+              <p style="font-size:11px">Small</p>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="btn-group">
+        <a class="btn" data-edit="bold" title="Bold (Ctrl/Cmd+B)"><i class="fa fa-bold"></i></a>
+        <a class="btn" data-edit="italic" title="Italic (Ctrl/Cmd+I)"><i class="fa fa-italic"></i></a>
+        <a class="btn" data-edit="strikethrough" title="Strikethrough"><i class="fa fa-strikethrough"></i></a>
+        <a class="btn" data-edit="underline" title="Underline (Ctrl/Cmd+U)"><i class="fa fa-underline"></i></a>
+      </div>
+
+      <div class="btn-group">
+        <a class="btn" data-edit="insertunorderedlist" title="Bullet list"><i class="fa fa-list-ul"></i></a>
+        <a class="btn" data-edit="insertorderedlist" title="Number list"><i class="fa fa-list-ol"></i></a>
+        <a class="btn" data-edit="outdent" title="Reduce indent (Shift+Tab)"><i class="fa fa-dedent"></i></a>
+        <a class="btn" data-edit="indent" title="Indent (Tab)"><i class="fa fa-indent"></i></a>
+      </div>
+
+      <div class="btn-group">
+        <a class="btn" data-edit="justifyleft" title="Align Left (Ctrl/Cmd+L)"><i class="fa fa-align-left"></i></a>
+        <a class="btn" data-edit="justifycenter" title="Center (Ctrl/Cmd+E)"><i class="fa fa-align-center"></i></a>
+        <a class="btn" data-edit="justifyright" title="Align Right (Ctrl/Cmd+R)"><i class="fa fa-align-right"></i></a>
+        <a class="btn" data-edit="justifyfull" title="Justify (Ctrl/Cmd+J)"><i class="fa fa-align-justify"></i></a>
+      </div>
+
+      <div class="btn-group">
+        <a class="btn dropdown-toggle" data-toggle="dropdown" title="Hyperlink"><i class="fa fa-link"></i></a>
+        <div class="dropdown-menu input-append">
+          <input class="span2" placeholder="URL" type="text" data-edit="createLink" />
+          <button class="btn" type="button">Add</button>
+        </div>
+        <a class="btn" data-edit="unlink" title="Remove Hyperlink"><i class="fa fa-cut"></i></a>
+      </div>
+
+      <div class="btn-group">
+        <a class="btn" title="Insert picture (or just drag & drop)" id="pictureBtn"><i class="fa fa-picture-o"></i></a>
+        <input type="file" data-role="magic-overlay" data-target="#pictureBtn" data-edit="insertImage" />
+      </div>
+
+      <div class="btn-group">
+        <a class="btn" data-edit="undo" title="Undo (Ctrl/Cmd+Z)"><i class="fa fa-undo"></i></a>
+        <a class="btn" data-edit="redo" title="Redo (Ctrl/Cmd+Y)"><i class="fa fa-repeat"></i></a>
+      </div>
+    </div>
+
+    <div id="editor" class="editor-wrapper"></div>
+  </div>
+
+  <div class="compose-footer">
+    <button id="send" class="btn btn-sm btn-success" type="button">Send</button>
+  </div>
+</div>
+<!-- /compose -->
+
+<!-- jQuery -->
+<script src="../vendors/jquery/dist/jquery.min.js"></script>
+<!-- Bootstrap -->
+<script src="../vendors/bootstrap/dist/js/bootstrap.min.js"></script>
+<!-- FastClick -->
+<script src="../vendors/fastclick/lib/fastclick.js"></script>
+<!-- NProgress -->
+<script src="../vendors/nprogress/nprogress.js"></script>
+<!-- bootstrap-wysiwyg -->
+<script src="../vendors/bootstrap-wysiwyg/js/bootstrap-wysiwyg.min.js"></script>
+<script src="../vendors/jquery.hotkeys/jquery.hotkeys.js"></script>
+<script src="../vendors/google-code-prettify/src/prettify.js"></script>
+
+<!-- Custom Theme Scripts -->
+<script src="../build/js/custom.min.js"></script>
+
+</body>
+</html>
